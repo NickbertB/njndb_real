@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Choose a Pre-Existing Configuration</title>
+<link rel="stylesheet" href="HomeCSS.css">
+<img src="NJNDesignBuildLogo.jpg" alt="NJN Design & Build" width="300px" height="175px">
+</head>
+
+<body>
+
+<ul class="nav">
+	<li><a  href="Home.html">Home</a></li>
+	<li><a  href="OurServices.html">Our Services</a></li> <!--Make this a dropdown item-->
+	<li><a  href="PricesFees.html">Prices & Fees</a></li>
+	<li><a  href="CalendarsSchedules.html">Calendars & Schedules</a></li>
+	<li><a  href="ContactUs.html">Contact Us</a></li>
+	<li><a  href="AboutUs.html">About Us</a></li>
+</ul>
+
+<h1 class="title">Choose a Pre-Existing Configuration</h1>
+
+<p>
+	As an alternative build method, you can choose from one of the builds we have already compiled and think suitable for specific applications. For example, we have builds for photographers and graphic designers, builds for those who run heavy-duty CAD software, to name a few.
+</p>
+
+<p>
+	As this option does not require a consultation, simply fill out the form below after looking at our various offerings.
+</p>
+
+<table class="buildTable">
+	<tr>
+		<td>
+			Build for Photographers
+			<ul>
+				<li>Intel Core i7-7700K</li>
+				<li>16GB RAM</li>
+			</ul>
+		</td>
+		<td>Build for CAD & Engineers</td>
+	</tr>
+</table>
+
+<form action="FormHandler_PreExistConfig.php" method="post">
+	
+	<h3>Please enter your first name.</h3>
+	<input type="text" name="firstname" value=""> <br>
+	<h3>Please enter your last name.</h3>
+	<input type="text" name="lastname" value=""> <br>
+	<h3>Please enter your email address.</h3>
+	<input type="text" name="email" value=""> <br>
+	
+	<h3>Which pre-build configuration would you like to order?</h3>
+	<input type="radio" name="buildchoice" value="Build for photographers/graphic designers">Build for photographers/graphic designers <br>
+	<input type="radio" name="buildchoice" value="Build for engineers/CAD use">Build for engineers/CAD use <br>
+	<input type="radio" name="buildchoice" value="Build for gaming">Build for gaming <br>
+	<input type="radio" name="buildchoice" value="Build for a server">Build for a server <br>
+	<input type="radio" name="buildchoice" value="Build for the average customer">Build for the average customer <br>
+	
+	<input type="submit" value="Submit">
+	
+</form>
+
+</body>
+</html>

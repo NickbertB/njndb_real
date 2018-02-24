@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+h1 {
+	text-align: center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 40px;
+}
+
+img {
+	display: block;
+	margin: auto;
+}
+
+h2.title {	
+	text-align: center;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+/* merge dropbtn style with this one */
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li a:hover:not(.active) {
+    /* this is making the list item background black on hover
+    background-color: #111; 
+    */
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+td, th {
+	
+	padding: 15px;
+	
+}
+
+.textleft {
+	
+	text-align: left;
+	
+}
+
+.textcenter {
+	
+	text-align: center;
+	
+}
+
+.divcenter {
+	
+	margin: auto;
+	width: 60%;
+	
+}
+
+.buildTable {
+	
+	border: 1px solid black;
+	
+}
+
+/* Dropdown stuff */
+
+/* merge this with the li a style 
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+*/
+
+.dropdown {
+    /* this line is the killer
+    position: relative;
+    */
+    display: inline-block;
+    overflow: visible;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: blue;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}

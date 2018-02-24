@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Complete Custom Build</title>
+<link rel="stylesheet" href="HomeCSS.css">
+<img src="NJNDesignBuildLogo.jpg" alt="NJN Design & Build" width="300px" height="175px">
+</head>
+
+<body>
+
+<ul class="nav">
+	<li><a  href="Home.html">Home</a></li>
+	<li><a  href="OurServices.html">Our Services</a></li> <!--Make this a dropdown item-->
+	<li><a  href="PricesFees.html">Prices & Fees</a></li>
+	<li><a  href="CalendarsSchedules.html">Calendars & Schedules</a></li>
+	<li><a  href="ContactUs.html">Contact Us</a></li>
+	<li><a  href="AboutUs.html">About Us</a></li>
+</ul>
+
+<h1 class="title">Build From Scratch</h1>
+
+<p class="textcenter">Have you been dreaming of your perfect computer, but can't find just the right thing from a manufacturer?</p>
+<p class="textcenter">Let NJN Design & Build do the hard work of hand-picking the components and assembling them into a finished product for you!</p>
+<p class="textcenter">Just tell us what you want from a computer, and we will have a consultation with you to determine exactly what you need.</p>
+<p class="textcenter">We will present you with three different build options at varying price points. All you have to do is tell us which one you want, and we'll take care of the rest!</p>
+
+<form action="FormHandler_BuildFromScratch.php" method="post">
+	<h3>Please enter your first name.</h3>
+	<input type="text" name="firstname" value=""> <br>
+	
+	<h3>Please enter your last name.</h3>
+	<input type="text" name="lastname" value=""> <br>
+	
+	<h3>Please enter your email address.</h3>
+	<input type="text" name="email" value=""> <br>
+	
+	<h3>How much are you able to spend on your new computer?</h3>
+	<input type="radio" name="price" value="less800"> Up to $800 <br>
+	<input type="radio" name="price" value="800to1100"> $800-$1,100 <br>
+	<input type="radio" name="price" value="1200to1800"> $1,200-$1,800 <br>
+	<input type="radio" name="price" value="more1900"> $1,900 or more <br>
+	
+	<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
